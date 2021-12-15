@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Sidebar from "../components/Sidebar";
+import { Main, Sidebar } from "../components";
 
 export default function Home() {
 	return (
@@ -7,9 +7,9 @@ export default function Home() {
 			<Head>
 				<title>Spotify clone</title>
 			</Head>
-			<main className="">
+			<main className="flex">
 				<Sidebar />
-				{/* Main */}
+				<Main />
 			</main>
 		</div>
 	);
