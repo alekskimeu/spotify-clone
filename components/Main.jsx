@@ -48,7 +48,7 @@ const Main = () => {
 				</div>
 			</header>
 			<section
-				className={`flex items-end space-x-7 bg-gradient-to-b to-black ${color} h-80 text-white p-8`}
+				className={`flex items-center space-x-7 bg-gradient-to-b to-black ${color} h-80 text-white p-8`}
 			>
 				<img
 					className="h-44 w-44 shadow-2xl"
@@ -56,10 +56,13 @@ const Main = () => {
 					alt=""
 				/>
 				<div>
-					<p>PLAYLIST</p>
-					<h1 className="text-2xl md:text-3xl xl:text-5xl font-bold">
+					<p className="text-sm">PLAYLIST</p>
+					<h1 className="text-2xl md:text-3xl xl:text-7xl font-bold">
 						{playlist?.name}
 					</h1>
+					<p className="text-gray-100 opacity-70 text-sm pr-5 mt-4">
+						{playlist?.description}
+					</p>
 				</div>
 			</section>
 
