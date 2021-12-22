@@ -3,6 +3,15 @@
 
 Web app clone of Spotify
 
+
+## Features
+
+- User authentication
+- Fetch user playlists & songs
+- Play/pause song
+- Volume adjustment
+
+
 ## Tech Stack
 
 **Client:** React, NextJs, Recoil, TailwindCSS
@@ -67,11 +76,4 @@ To run this project, you will need to add the following environment variables to
 ### Playlist details
 ![App Screenshot](https://github.com/alekskimeu/spotify-clone/blob/main/public/songs.png)
 
-
-## Features
-
-- User authentication
-- Fetch user playlists & songs
-- Play/pause song
-- Volume adjustment
 
