@@ -4,7 +4,7 @@ import { Main, Player, Sidebar } from "../components";
 
 export default function Home() {
 	return (
-		<div className="bg-black h-screen overflow-hidden">
+		<div className="bg-black h-screen overflow-hidden font-sans tracking-wide">
 			<Head>
 				<title>Spotify clone</title>
 			</Head>
