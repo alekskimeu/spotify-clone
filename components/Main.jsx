@@ -44,9 +44,9 @@ const Main = () => {
 			.catch((err) => console.log("Something went wrong"));
 	}, [spotifyApi, playlistId]);
 	return (
-		<div className="w-3/4 relative bg-zinc-900">
-			<header className="absolute top-5 right-8">
-				<div className="flex items-center bg-black text-white space-x-3 opacity-90 hover:opacity-80 cursor-pointer rounded-full p-1 pr-2">
+		<div className="w-3/4 relative bg-zinc-900 h-screen overflow-y-scroll scrollbar-hide">
+			<header className="sticky top-0 bg-red-500 z-10">
+				<div className="absolute right-8 top-5 flex items-center bg-black text-white space-x-3 opacity-90 hover:opacity-80 cursor-pointer rounded-full p-1 pr-2">
 					<img
 						className="rounded-full w-10 h-10"
 						src={session?.user.image}
@@ -75,7 +75,7 @@ const Main = () => {
 				</div>
 			</section>
 
-			<div className="flex justify-between px-8 mb-4">
+			<div className="flex justify-between px-8 mb-4 border-b-2 border-opacity-5">
 				{/* Left */}
 				<div className="flex items-center gap-5">
 					<PlayIcon className="w-20 h-20 text-green-400" />
@@ -92,7 +92,7 @@ const Main = () => {
 				</div>
 			</div>
 
-			<div className="h-screen overflow-y-scroll scrollbar-hide">
+			<div>
 				<Songs />
 			</div>
 		</div>

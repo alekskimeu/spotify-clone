@@ -1,3 +1,4 @@
+import moment from "moment";
 import React from "react";
 import { useRecoilState } from "recoil";
 import { currentTrackIdState, isPlayingState } from "../atoms/songAtom";
@@ -36,6 +37,9 @@ const Song = ({ order, track }) => {
 			</div>
 			<div className="flex items-center justify-between ml-auto md:ml-0">
 				<p className="hidden md:inline w-40">{track.track.album.name}</p>
+				<p className="hidden md:inline">
+					{moment(track.added_at).format("MMM d, YYYY")}
+				</p>
 				<p>{millisToMinutesAndSeconds(track.track.duration_ms)}</p>
 			</div>
 		</div>
@@ -43,6 +47,5 @@ const Song = ({ order, track }) => {
 };
 
 export default Song;
-
 
 // Set hover color the backgroundcolor of the head
