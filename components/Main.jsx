@@ -45,7 +45,7 @@ const Main = () => {
 	}, [spotifyApi, playlistId]);
 	return (
 		<div className="w-3/4 relative bg-zinc-900 h-screen overflow-y-scroll scrollbar-hide">
-			<header className="sticky top-0 bg-red-500 z-10">
+			<header className="sticky top-0 z-10">
 				<div className="absolute right-8 top-5 flex items-center bg-black text-white space-x-3 opacity-90 hover:opacity-80 cursor-pointer rounded-full p-1 pr-2">
 					<img
 						className="rounded-full w-10 h-10"
@@ -78,9 +78,9 @@ const Main = () => {
 			<div className="flex justify-between px-8 mb-4 border-b-2 border-opacity-5">
 				{/* Left */}
 				<div className="flex items-center gap-5">
-					<PlayIcon className="w-20 h-20 text-green-400" />
-					<ArrowDownIcon className="w-7 h-7 text-white border-2 opacity-50 rounded-full p-1" />
-					<DotsHorizontalIcon className="h-6 w-6 text-white opacity-50" />
+					<PlayIcon className="w-20 h-20 text-green-400 cursor-pointer" />
+					<ArrowDownIcon className="w-7 h-7 text-white border-2 opacity-50 rounded-full p-1 cursor-pointer hover:opacity-100" />
+					<DotsHorizontalIcon className="h-6 w-6 text-white opacity-50 cursor-pointer hover:opacity-100" />
 				</div>
 
 				{/* Right */}
