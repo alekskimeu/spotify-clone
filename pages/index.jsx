@@ -1,6 +1,6 @@
 import { getSession } from "next-auth/react";
 import Head from "next/head";
-import { Main, Player, Sidebar } from "../components";
+import { Main, Player, Sidebar, Rightbar } from "../components";
 
 export default function Home() {
 	return (
@@ -11,6 +11,7 @@ export default function Home() {
 			<main className="flex">
 				<Sidebar />
 				<Main />
+				<Rightbar />
 			</main>
 
 			<div className="sticky bottom-0">

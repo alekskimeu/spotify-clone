@@ -1,11 +1,20 @@
 import { useRecoilState, useRecoilValue } from "recoil";
-import { ChevronDownIcon } from "@heroicons/react/outline";
+import {
+	ChevronDownIcon,
+	DotsHorizontalIcon,
+	SearchIcon,
+} from "@heroicons/react/outline";
 import { useSession, signOut } from "next-auth/react";
 import React, { useEffect, useState } from "react";
 import { shuffle } from "lodash";
 import { playlistState, playlistIdState } from "../atoms/playlistAtom";
 import useSpotify from "../hooks/useSpotify";
 import Songs from "./Songs";
+import {
+	PlayIcon,
+	ArrowDownIcon,
+	ChevronDownIcon as ChevDown,
+} from "@heroicons/react/solid";
 
 const colors = [
 	"from-indigo-500",
@@ -35,7 +44,7 @@ const Main = () => {
 			.catch((err) => console.log("Something went wrong"));
 	}, [spotifyApi, playlistId]);
 	return (
-		<div className="flex-grow">
+		<div className="w-3/4 relative bg-zinc-900">
 			<header className="absolute top-5 right-8">
 				<div className="flex items-center bg-black text-white space-x-3 opacity-90 hover:opacity-80 cursor-pointer rounded-full p-1 pr-2">
 					<img
@@ -65,6 +74,23 @@ const Main = () => {
 					</p>
 				</div>
 			</section>
+
+			<div className="flex justify-between px-8 mb-4">
+				{/* Left */}
+				<div className="flex items-center gap-5">
+					<PlayIcon className="w-20 h-20 text-green-400" />
+					<ArrowDownIcon className="w-7 h-7 text-white border-2 opacity-50 rounded-full p-1" />
+					<DotsHorizontalIcon className="h-6 w-6 text-white opacity-50" />
+				</div>
+
+				{/* Right */}
+				<div className="flex gap-3 items-center cursor-pointer">
+					<SearchIcon className="h-5 w-5 text-white opacity-70" />
+					<p className="text-white opacity-50 flex items-center gap-2 hover:opacity-100 transition-all duration-300">
+						Custom order <ChevDown className="h-6 w-6 text-white" />
+					</p>
+				</div>
+			</div>
 
 			<div className="h-screen overflow-y-scroll scrollbar-hide">
 				<Songs />
