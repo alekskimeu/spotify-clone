@@ -1,27 +1,77 @@
-# Next.js + Tailwind CSS Example
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+# Spotify clone
 
-## Preview
+Web app clone of Spotify
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+## Tech Stack
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+**Client:** React, NextJs, Recoil, TailwindCSS
 
-## Deploy your own
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+## Lessons Learned
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+* Working with Spotify API
+* Next JS Middleware
+* Next Auth
+* Recoil for state management
 
-## How to use
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+## Run Locally
+
+Clone the project
 
 ```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+  git clone https://github.com/alekskimeu/spotify-clone
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Go to the project directory
+
+```bash
+  cd spotify-clone
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
+Go to:
+`http://localhost:3000`
+
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`NEXT_AUTH_URL`
+`NEXT_PUBLIC_CLIENT_SECRET`
+`NEXT_PUBLIC_CLIENT_ID`
+`JWT_SECRET`
+
+
+## Screenshots
+
+### Login page
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+### Homepage
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+### Playlist details
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
+## Features
+
+- User authentication
+- Fetch user playlists & songs
+- Play/pause song
+- Volume adjustment
+
