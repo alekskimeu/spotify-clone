@@ -59,13 +59,13 @@ To run this project, you will need to add the following environment variables to
 ## Screenshots
 
 ### Login page
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/alekskimeu/spotify-clone/blob/main/public/login.png)
 
 ### Homepage
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/alekskimeu/spotify-clone/blob/main/public/playlist.png)
 
 ### Playlist details
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/alekskimeu/spotify-clone/blob/main/public/songs.png)
 
 
 ## Features
